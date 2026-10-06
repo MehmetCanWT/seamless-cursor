@@ -1,0 +1,58 @@
+version = "${mod_version}+${minecraft_version}"
+group = maven_group
+base.archivesName = 'seamless-cursor'
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		seamlessCursor {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+sourceSets {
+	main {
+		java.setSrcDirs([rootProject.file('src/main/java')])
+		resources.setSrcDirs([rootProject.file('src/main/resources')])
+	}
+	client {
+		java.setSrcDirs([rootProject.file('src/client/java')])
+		resources.setSrcDirs([rootProject.file('src/client/resources')])
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${loader_version}"
+}
+
+processResources {
+	def ver = version
+	def dep = minecraft_dep
+	inputs.property 'version', ver
+	inputs.property 'minecraft_dep', dep
+
+	filesMatching('fabric.mod.json') {
+		expand 'version': ver, 'minecraft_dep': dep
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+	it.options.encoding = 'UTF-8'
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+	from(rootProject.file('LICENSE')) {
+		rename { "${it}_seamless-cursor" }
+	}
+}

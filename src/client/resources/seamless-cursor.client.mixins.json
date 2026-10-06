@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.mehmetcanwt.seamlesscursor.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"MouseHandlerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "seamless-cursor",
+	"version": "${version}",
+	"name": "Seamless Cursor",
+	"description": "Keeps the mouse cursor exactly where you left it across menu changes, container updates, and server chest GUIs. Zero mouse reset, zero hitching, 100% ban safe.",
+	"authors": [
+		"MehmetCanWT"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/seamless-cursor",
+		"sources": "https://github.com/MehmetCanWT/seamless-cursor",
+		"issues": "https://github.com/MehmetCanWT/seamless-cursor/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/seamless-cursor/icon.png",
+	"environment": "client",
+	"mixins": [
+		{
+			"config": "seamless-cursor.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "${minecraft_dep}",
+		"java": ">=25"
+	}
+}
