@@ -1,4 +1,4 @@
-version = "${mod_version}+${minecraft_version}"
+version = "${mod_version}"
 group = maven_group
 base.archivesName = 'seamless-cursor'
 

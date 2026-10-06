@@ -6,7 +6,7 @@
 
   <p>
     <a href="https://modrinth.com/mod/seamless-cursor"><img src="https://img.shields.io/badge/Modrinth-Available-00AF5C?style=flat-square&logo=modrinth" alt="Modrinth" /></a>
-    <img src="https://img.shields.io/badge/Minecraft-26.2-blue?style=flat-square" alt="Minecraft 26.2" />
+    <a href="https://curseforge.com/minecraft/mc-mods/seamless-cursor"><img src="https://img.shields.io/badge/CurseForge-Available-F16436?style=flat-square&logo=curseforge" alt="CurseForge" /></a>
     <img src="https://img.shields.io/badge/ModLoader-Fabric-lightgrey?style=flat-square" alt="Fabric" />
     <img src="https://img.shields.io/badge/Side-Client--Only-brightgreen?style=flat-square" alt="Client-Side" />
     <img src="https://img.shields.io/badge/Ban%20Risk-0%25%20(Pure%20QoL)-brightgreen?style=flat-square" alt="Ban Safe" />
@@ -18,7 +18,7 @@
 
 ## 🎯 What is Seamless Cursor?
 
-When playing on servers like **Hypixel** (SkyBlock, Bedwars, SkyWars) or using complex server menus, clicking through chest GUIs is often infuriating:
+When playing on servers like **Hypixel** (SkyBlock, Bedwars, SkyWars) or using server menus, clicking through chest GUIs is often frustrating:
 1. Every time a menu changes pages, updates items, or transitions to a sub-menu, vanilla Minecraft **snaps your mouse cursor back to the exact center of the screen**.
 2. Worse, during the brief transition packet, your camera can jerk and your mouse hitches.
 
@@ -34,7 +34,8 @@ Your mouse stays **exactly where you left it** — right on the slot or button y
 - **Zero Mouse Hitching:** Eliminates the brief cursor stutter and background camera jitter when server plugins send `ContainerClose` followed by `OpenScreen`.
 - **Pure Client-Side:** Requires **NO** server-side mod. Works on any multiplayer server.
 - **Safe Bounds Clamping:** Safely clamps coordinates within window limits if window dimensions change.
-- **Ultra Lightweight:** Zero external mod dependencies (doesn't even require Fabric API). Under 5 KB jar footprint!
+- **Ultra Lightweight:** Zero external mod dependencies (doesn't even require Fabric API). Under 45 KB jar footprint!
+- **Zero-Config:** Plug-and-play. Drop it into your mods folder and it works immediately.
 
 ---
 
@@ -50,8 +51,8 @@ Your mouse stays **exactly where you left it** — right on the slot or button y
 
 ## 🚀 Installation
 
-1. Install **[Fabric Loader](https://fabricmc.net/)** for **Minecraft 26.2**.
-2. Download `seamless-cursor-1.0.0+26.2.jar` from [Releases](https://github.com/MehmetCanWT/seamless-cursor/releases) or [Modrinth](https://modrinth.com/mod/seamless-cursor).
+1. Install **[Fabric Loader](https://fabricmc.net/)**.
+2. Download `seamless-cursor-1.0.0.jar` from [Releases](https://github.com/MehmetCanWT/seamless-cursor/releases), [Modrinth](https://modrinth.com/mod/seamless-cursor), or [CurseForge](https://curseforge.com/minecraft/mc-mods/seamless-cursor).
 3. Place the `.jar` into your `.minecraft/mods` folder.
 4. Launch Minecraft and enjoy smooth menus!
 
@@ -68,7 +69,7 @@ cd seamless-cursor
 ```
 
 The compiled jar will be located at:
-`fabric-26.2/build/libs/seamless-cursor-1.0.0+26.2.jar`
+`fabric-26.2/build/libs/seamless-cursor-1.0.0.jar`
 
 ---
 
