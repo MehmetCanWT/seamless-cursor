@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="icon.png" width="128" height="128" alt="Seamless Cursor Icon" />
   <h1>Seamless Cursor</h1>
   <p><strong>Never lose your mouse position in menus again.</strong></p>
   <p>Smooth, persistent mouse cursor positioning for Minecraft menus, container updates, and server chest GUIs.</p>
